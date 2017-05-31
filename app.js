@@ -31,8 +31,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 //connect to mongoDB
-//mongoose.connect("mongodb://localhost/yelp_camp");
-mongoose.connect("mongodb://danny:password@ds157971.mlab.com:57971/yelpcamp");
+mongoose.connect("DATABASEURL");
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname+"/public"));
